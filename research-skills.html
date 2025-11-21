@@ -16,6 +16,7 @@
                 <a href="research-skills.html" class="active">Research Skills</a>
                 <a href="business-literacy.html">Business Literacy</a>
                 <a href="professional-composition.html">Professional Composition</a>
+                <a href="creative-coding.html">Creative Coding</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -163,6 +164,145 @@
         </div>
     </section>
 
+    <!-- Pricing Calculator -->
+    <section style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <h2 class="section-title">Program Pricing</h2>
+            <p class="section-intro">Flexible pricing options designed for your school's budget and schedule.</p>
+            
+            <div class="calculator">
+                <!-- 3-Day Intensive -->
+                <div class="calculator-section">
+                    <div class="program-toggle">
+                        <div class="toggle-switch" id="intensive-toggle"></div>
+                        <h3>3-Day Intensive Simulation</h3>
+                        <span class="slider-value">$6,000</span>
+                    </div>
+                    <p>Full immersive Birmingham Investigation experience with 15-30 students</p>
+                </div>
+
+                <!-- After-School Program -->
+                <div class="calculator-section">
+                    <div class="program-toggle">
+                        <div class="toggle-switch" id="afterschool-toggle"></div>
+                        <h3>After-School Program</h3>
+                    </div>
+                    
+                    <div id="afterschool-options" style="display: none;">
+                        <div class="slider-container">
+                            <div class="slider-header">
+                                <label>Number of sessions:</label>
+                                <span class="slider-value" id="sessions-value">4 sessions</span>
+                            </div>
+                            <input type="range" min="4" max="8" value="4" class="slider" id="sessions-slider">
+                            <small>$800 per 90-minute session</small>
+                        </div>
+
+                        <div class="price-breakdown" id="afterschool-breakdown">
+                            <div class="price-line">
+                                <span>4 sessions @ $800:</span>
+                                <span>$3,200</span>
+                            </div>
+                            <div class="price-line">
+                                <span>Total:</span>
+                                <span>$3,200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assembly Workshop -->
+                <div class="calculator-section">
+                    <div class="program-toggle">
+                        <div class="toggle-switch" id="assembly-toggle"></div>
+                        <h3>Assembly + Workshop</h3>
+                        <span class="slider-value">$2,500</span>
+                    </div>
+                    <p>60-minute assembly + optional 2-hour workshop for entire grade level</p>
+                </div>
+
+                <!-- Total -->
+                <div class="total-section">
+                    <h3>Total Estimated Cost</h3>
+                    <div class="total-price" id="total-price-research">$0</div>
+                    <p>Ready to build research excellence at your school?</p>
+                    <a href="contact.html" style="display: inline-block; background: white; color: var(--peacock-blue); padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 600; margin-top: 1rem;">Schedule a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // Research Skills Calculator
+    (function() {
+        const intensiveToggle = document.getElementById('intensive-toggle');
+        const afterschoolToggle = document.getElementById('afterschool-toggle');
+        const assemblyToggle = document.getElementById('assembly-toggle');
+        const afterschoolOptions = document.getElementById('afterschool-options');
+        const sessionsSlider = document.getElementById('sessions-slider');
+        const sessionsValue = document.getElementById('sessions-value');
+        const afterschoolBreakdown = document.getElementById('afterschool-breakdown');
+        const totalPrice = document.getElementById('total-price-research');
+
+        if (!intensiveToggle) return; // Exit if elements don't exist
+
+        let intensiveActive = false;
+        let afterschoolActive = false;
+        let assemblyActive = false;
+
+        intensiveToggle.addEventListener('click', () => {
+            intensiveActive = !intensiveActive;
+            intensiveToggle.classList.toggle('active', intensiveActive);
+            calculateTotal();
+        });
+
+        afterschoolToggle.addEventListener('click', () => {
+            afterschoolActive = !afterschoolActive;
+            afterschoolToggle.classList.toggle('active', afterschoolActive);
+            afterschoolOptions.style.display = afterschoolActive ? 'block' : 'none';
+            calculateTotal();
+        });
+
+        assemblyToggle.addEventListener('click', () => {
+            assemblyActive = !assemblyActive;
+            assemblyToggle.classList.toggle('active', assemblyActive);
+            calculateTotal();
+        });
+
+        sessionsSlider.addEventListener('input', () => {
+            const sessions = parseInt(sessionsSlider.value);
+            sessionsValue.textContent = `${sessions} sessions`;
+            calculateTotal();
+        });
+
+        function calculateTotal() {
+            let total = 0;
+
+            if (intensiveActive) total += 6000;
+            if (assemblyActive) total += 2500;
+
+            if (afterschoolActive) {
+                const sessions = parseInt(sessionsSlider.value);
+                const afterschoolTotal = sessions * 800;
+                total += afterschoolTotal;
+
+                afterschoolBreakdown.innerHTML = `
+                    <div class="price-line">
+                        <span>${sessions} sessions @ $800:</span>
+                        <span>$${afterschoolTotal.toLocaleString()}</span>
+                    </div>
+                    <div class="price-line">
+                        <span>Total:</span>
+                        <span>$${afterschoolTotal.toLocaleString()}</span>
+                    </div>
+                `;
+            }
+
+            totalPrice.textContent = `$${total.toLocaleString()}`;
+        }
+    })();
+    </script>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
@@ -181,7 +321,8 @@
                     <ul>
                         <li><a href="research-skills.html">Internet Research Skills</a></li>
                         <li><a href="business-literacy.html">Business Model Literacy</a></li>
-                        <li><a href="professional-composition.html">Professional Composition</a></li>
+                        <li><a href="professional-composition.html">Professional Composition</a>
+                <a href="creative-coding.html">Creative Coding</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
