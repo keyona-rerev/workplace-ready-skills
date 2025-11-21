@@ -1,20 +1,64 @@
 # Workplace Ready Skills Website
 
-A clean, Apple-like website showcasing three immersive programs that develop practical workplace competencies.
+A clean, Apple-like website showcasing four programs with **custom pricing calculators**, **admin dashboard**, and **comprehensive FAQ section**.
+
+## 🆕 **Latest Updates**
+
+### **Homepage Enhancements:**
+- ✅ Admin Dashboard with live analytics mockup
+- ✅ Comprehensive FAQ section (7 Q&As)
+- ✅ Skills progression tracking visualization
+
+### **Program Pages:**
+- ✅ **Custom pricing calculator** on every program page
+- ✅ Unique pricing for each program's formats
+- ✅ Interactive sliders and toggles
+- ✅ Real-time price calculations
 
 ## Site Structure
 
 ### Pages Included:
-1. **index.html** - Homepage with overview and value proposition
-2. **research-skills.html** - Internet Research Skills program page
-3. **business-literacy.html** - Business Model Literacy program page
-4. **professional-composition.html** - Professional Composition program page
-5. **about.html** - About page (with placeholder content for team)
-6. **contact.html** - Contact page with form and information
+1. **index.html** (19KB) - Homepage with FAQ + Admin Dashboard
+2. **research-skills.html** (18KB) - Internet Research Skills with custom calculator
+3. **business-literacy.html** (20KB) - Business Model Literacy with custom calculator
+4. **professional-composition.html** (20KB) - Professional Composition with custom calculator
+5. **creative-coding.html** (32KB) - Creative Coding with 4-format calculator
+6. **about.html** - About page (placeholder content for team)
+7. **contact.html** - Contact page with form
 
 ### Supporting Files:
-- **styles.css** - Complete styling with your blue-green color palette
-- **script.js** - Interactive functionality (mobile menu, form handling, animations)
+- **styles.css** (22KB) - Complete styling with calculator, dashboard, and FAQ components
+- **script.js** (6.4KB) - Interactive functionality for calculators and FAQ accordions
+
+## 🎯 **Key Features**
+
+### **Custom Pricing Calculators**
+Each program page has a unique, interactive calculator:
+
+- **Research Skills:** 3-day intensive ($6K), after-school ($800/session), assembly ($2.5K)
+- **Business Literacy:** 3-day intensive ($6.5K), after-school ($850/session), assembly ($2.5K)
+- **Professional Composition:** 2-day intensive ($5K), after-school ($750/session), assembly ($2.5K)
+- **Creative Coding:** 4 formats with student count scaling and multiple duration options
+
+**Calculator Features:**
+- Toggle switches to activate/deactivate programs
+- Interactive sliders for adjustable values
+- Real-time price calculations
+- Professional breakdown displays
+- Mobile-responsive design
+
+### **Admin Dashboard Section (Homepage)**
+- Live analytics mockup
+- Student engagement metrics
+- Skills progression tracking with visual bars
+- Hard skills vs. soft skills comparison
+- Professional dark theme design
+
+### **FAQ Section (Homepage)**
+- 7 comprehensive questions with detailed answers
+- Smooth accordion animations
+- Mobile-friendly layout
+- Covers program fundamentals, pricing, and logistics
 
 ## Color Palette Used
 
