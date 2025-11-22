@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Composition | Workplace Ready Skills</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +14,15 @@
             <div class="logo">Workplace Ready</div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="research-skills.html">Research Skills</a>
-                <a href="business-literacy.html">Business Literacy</a>
-                <a href="professional-composition.html" class="active">Professional Composition</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">Programs <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="research-skills.html">Internet Research Skills</a>
+                        <a href="business-literacy.html">Business Model Literacy</a>
+                        <a href="professional-composition.html" class="active">Professional Composition</a>
+                        <a href="creative-coding.html">Creative Coding</a>
+                    </div>
+                </div>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -88,14 +95,62 @@
 
             <div class="dynamic-elements">
                 <h4>Dynamic Facilitation Elements:</h4>
-                <ul>
-                    <li><strong>Executive feedback requiring revision</strong> with specific improvement demands</li>
-                    <li><strong>Challenging Q&A during presentations</strong> testing depth of analysis</li>
-                    <li><strong>Additional data/constraints introduced mid-project</strong> requiring incorporation</li>
-                    <li><strong>Competing analyses from other board members</strong> requiring reconciliation</li>
-                    <li><strong>CEO questions</strong> forcing real-time defense with specific evidence</li>
-                    <li><strong>Professional standards enforcement</strong> mirroring actual workplace expectations</li>
-                </ul>
+                <div class="dynamic-grid">
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Executive Feedback</h5>
+                            <p>Revision demands with specific improvement requirements</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Challenging Q&A</h5>
+                            <p>Presentation questions testing analysis depth</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>New Constraints</h5>
+                            <p>Additional data introduced mid-project</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Competing Analyses</h5>
+                            <p>Board member perspectives requiring reconciliation</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>CEO Questions</h5>
+                            <p>Real-time defense with specific evidence</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Standards Enforcement</h5>
+                            <p>Mirroring actual workplace expectations</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -223,21 +278,21 @@
                     <div id="afterschool-options-comp" style="display: none;">
                         <div class="slider-container">
                             <div class="slider-header">
-                                <label>Number of sessions:</label>
-                                <span class="slider-value" id="sessions-value-comp">4 sessions</span>
+                                <label>Duration:</label>
+                                <span class="slider-value" id="sessions-value-comp">1 session/week</span>
                             </div>
-                            <input type="range" min="4" max="8" value="4" class="slider" id="sessions-slider-comp">
-                            <small>$750 per 90-minute session with feedback cycles</small>
+                            <input type="range" min="1" max="3" value="1" class="slider" id="sessions-slider-comp">
+                            <small>$750 per session with feedback cycles</small>
                         </div>
 
                         <div class="price-breakdown" id="afterschool-breakdown-comp">
                             <div class="price-line">
-                                <span>4 sessions @ $750:</span>
-                                <span>$3,000</span>
+                                <span>1 session @ $750:</span>
+                                <span>$750</span>
                             </div>
                             <div class="price-line">
                                 <span>Total:</span>
-                                <span>$3,000</span>
+                                <span>$750</span>
                             </div>
                         </div>
                     </div>
@@ -303,7 +358,7 @@
 
         sessionsSlider.addEventListener('input', () => {
             const sessions = parseInt(sessionsSlider.value);
-            sessionsValue.textContent = `${sessions} sessions`;
+            sessionsValue.textContent = `${sessions} session${sessions > 1 ? 's' : ''}/week`;
             calculateTotal();
         });
 
@@ -320,7 +375,7 @@
 
                 afterschoolBreakdown.innerHTML = `
                     <div class="price-line">
-                        <span>${sessions} sessions @ $750:</span>
+                        <span>${sessions} session${sessions > 1 ? 's' : ''}/week @ $750:</span>
                         <span>$${afterschoolTotal.toLocaleString()}</span>
                     </div>
                     <div class="price-line">
