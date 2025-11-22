@@ -150,6 +150,24 @@ document.querySelectorAll('.stat-card, .program-card, .format-card').forEach(car
     });
 });
 
+// FAQ Toggle Functionality
+document.querySelectorAll('.faq-item').forEach(item => {
+    const question = item.querySelector('.faq-question');
+    if (question) {
+        question.addEventListener('click', function() {
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            item.classList.toggle('active');
+        });
+    }
+});
+
 // Console message
 console.log('%cWorkplace Ready Skills', 'color: #00cf91; font-size: 24px; font-weight: bold;');
 console.log('%cPreparing students with practical workplace competencies', 'color: #417777; font-size: 14px;');
