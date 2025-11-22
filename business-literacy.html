@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Model Literacy | Workplace Ready Skills</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,10 +14,15 @@
             <div class="logo">Workplace Ready</div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="research-skills.html">Research Skills</a>
-                <a href="business-literacy.html" class="active">Business Literacy</a>
-                <a href="professional-composition.html">Professional Composition</a>
-                <a href="creative-coding.html">Creative Coding</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">Programs <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="research-skills.html">Internet Research Skills</a>
+                        <a href="business-literacy.html" class="active">Business Model Literacy</a>
+                        <a href="professional-composition.html">Professional Composition</a>
+                        <a href="creative-coding.html">Creative Coding</a>
+                    </div>
+                </div>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -71,7 +77,7 @@
             <h2 style="margin-bottom: 1.5rem; font-size: 2rem; font-weight: 700; color: var(--text-dark);">The City Budget Challenge</h2>
             <h3 style="margin-bottom: 1rem; font-size: 1.3rem; font-weight: 600; color: var(--text-dark);">3-Day Immersive Simulation</h3>
             
-            <p>Students serve as municipal consultants hired by Birmingham to evaluate RFP submissions for solving a critical community problem with limited public funding. The city has released a call for proposals, and students must analyze competing submissions from for-profit companies, nonprofit organizations, and hybrid social enterprises—each proposing different approaches to the same problem. Working with real budget constraints (actual dollar amounts, actual population to serve), students evaluate whether each proposed business model appropriately matches the problem type: Can the target population afford to pay? Is this a public good or private benefit? Does the revenue model align with mission? Throughout the simulation, the facilitator introduces complications: budget cuts requiring reallocation decisions, new demographic data that changes viability assessments, and community testimony about needs. Students must recommend which proposal(s) to fund while justifying trade-offs and explaining why other well-intentioned models would fail. This positions them as decision-makers rather than entrepreneurs, developing the analytical frameworks and economic literacy that entry-level employees need when evaluating business opportunities, understanding organizational constraints, and participating in strategic planning.</p>
+            <p>Students serve as municipal consultants hired by the city to evaluate RFP submissions for solving a critical community problem with limited public funding. The city has released a call for proposals, and students must analyze competing submissions from for-profit companies, nonprofit organizations, and hybrid social enterprises—each proposing different approaches to the same problem. Working with real budget constraints (actual dollar amounts, actual population to serve), students evaluate whether each proposed business model appropriately matches the problem type: Can the target population afford to pay? Is this a public good or private benefit? Does the revenue model align with mission? Throughout the simulation, the facilitator introduces complications: budget cuts requiring reallocation decisions, new demographic data that changes viability assessments, and community testimony about needs. Students must recommend which proposal(s) to fund while justifying trade-offs and explaining why other well-intentioned models would fail. This positions them as decision-makers rather than entrepreneurs, developing the analytical frameworks and economic literacy that entry-level employees need when evaluating business opportunities, understanding organizational constraints, and participating in strategic planning.</p>
 
             <div class="skills-showcase">
                 <h4>Skills Demonstrated Throughout Simulation:</h4>
@@ -89,14 +95,62 @@
 
             <div class="dynamic-elements">
                 <h4>Dynamic Facilitation Elements:</h4>
-                <ul>
-                    <li><strong>Mid-simulation budget cuts</strong> requiring reallocation and tough choices</li>
-                    <li><strong>New demographic/market data</strong> affecting proposal viability mid-evaluation</li>
-                    <li><strong>Community testimony videos</strong> revealing needs not captured in written proposals</li>
-                    <li><strong>Additional RFP submissions</strong> with novel approaches requiring rapid assessment</li>
-                    <li><strong>Facilitator questions</strong> forcing defense of recommendations with financial logic</li>
-                    <li><strong>Competing priorities</strong> from different city departments requiring negotiation</li>
-                </ul>
+                <div class="dynamic-grid">
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Budget Cuts</h5>
+                            <p>Mid-simulation reallocation requiring tough choices</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>New Market Data</h5>
+                            <p>Affecting proposal viability mid-evaluation</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Community Testimony</h5>
+                            <p>Revealing needs not in written proposals</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Additional RFPs</h5>
+                            <p>Novel approaches requiring rapid assessment</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Facilitator Questions</h5>
+                            <p>Forcing defense with financial logic</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Competing Priorities</h5>
+                            <p>City departments requiring negotiation</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -222,21 +276,21 @@
                     <div id="afterschool-options-biz" style="display: none;">
                         <div class="slider-container">
                             <div class="slider-header">
-                                <label>Number of sessions:</label>
-                                <span class="slider-value" id="sessions-value-biz">5 sessions</span>
+                                <label>Duration:</label>
+                                <span class="slider-value" id="sessions-value-biz">1 session/week</span>
                             </div>
-                            <input type="range" min="5" max="10" value="5" class="slider" id="sessions-slider-biz">
-                            <small>$850 per 90-minute session</small>
+                            <input type="range" min="1" max="3" value="1" class="slider" id="sessions-slider-biz">
+                            <small>$850 per session</small>
                         </div>
 
                         <div class="price-breakdown" id="afterschool-breakdown-biz">
                             <div class="price-line">
-                                <span>5 sessions @ $850:</span>
-                                <span>$4,250</span>
+                                <span>1 session @ $850:</span>
+                                <span>$850</span>
                             </div>
                             <div class="price-line">
                                 <span>Total:</span>
-                                <span>$4,250</span>
+                                <span>$850</span>
                             </div>
                         </div>
                     </div>
@@ -302,7 +356,7 @@
 
         sessionsSlider.addEventListener('input', () => {
             const sessions = parseInt(sessionsSlider.value);
-            sessionsValue.textContent = `${sessions} sessions`;
+            sessionsValue.textContent = `${sessions} session${sessions > 1 ? 's' : ''}/week`;
             calculateTotal();
         });
 
@@ -319,7 +373,7 @@
 
                 afterschoolBreakdown.innerHTML = `
                     <div class="price-line">
-                        <span>${sessions} sessions @ $850:</span>
+                        <span>${sessions} session${sessions > 1 ? 's' : ''}/week @ $850:</span>
                         <span>$${afterschoolTotal.toLocaleString()}</span>
                     </div>
                     <div class="price-line">
