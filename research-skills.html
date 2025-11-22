@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internet Research Skills | Workplace Ready Skills</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,10 +14,15 @@
             <div class="logo">Workplace Ready</div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="research-skills.html" class="active">Research Skills</a>
-                <a href="business-literacy.html">Business Literacy</a>
-                <a href="professional-composition.html">Professional Composition</a>
-                <a href="creative-coding.html">Creative Coding</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">Programs <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="research-skills.html" class="active">Internet Research Skills</a>
+                        <a href="business-literacy.html">Business Model Literacy</a>
+                        <a href="professional-composition.html">Professional Composition</a>
+                        <a href="creative-coding.html">Creative Coding</a>
+                    </div>
+                </div>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -89,14 +95,62 @@
 
             <div class="dynamic-elements">
                 <h4>Dynamic Facilitation Elements:</h4>
-                <ul>
-                    <li><strong>Anonymous source videos</strong> requiring verification protocols</li>
-                    <li><strong>Conflicting documents</strong> dropped mid-investigation to test synthesis skills</li>
-                    <li><strong>"Leaked" information</strong> with questionable provenance requiring evaluation</li>
-                    <li><strong>Real-time facilitator challenges</strong> to unsubstantiated claims</li>
-                    <li><strong>Source credibility crises</strong> forcing students to reassess earlier findings</li>
-                    <li><strong>Deadline pressures</strong> mirroring actual workplace research demands</li>
-                </ul>
+                <div class="dynamic-grid">
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Anonymous Sources</h5>
+                            <p>Video sources requiring verification protocols</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Conflicting Documents</h5>
+                            <p>Dropped mid-investigation to test synthesis</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Leaked Information</h5>
+                            <p>Questionable provenance requiring evaluation</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Facilitator Challenges</h5>
+                            <p>Real-time questioning of unsubstantiated claims</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Credibility Crises</h5>
+                            <p>Forcing reassessment of earlier findings</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-item">
+                        <div class="dynamic-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="dynamic-content">
+                            <h5>Deadline Pressures</h5>
+                            <p>Mirroring actual workplace research demands</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -191,21 +245,21 @@
                     <div id="afterschool-options" style="display: none;">
                         <div class="slider-container">
                             <div class="slider-header">
-                                <label>Number of sessions:</label>
-                                <span class="slider-value" id="sessions-value">4 sessions</span>
+                                <label>Duration:</label>
+                                <span class="slider-value" id="sessions-value">1 session/week</span>
                             </div>
-                            <input type="range" min="4" max="8" value="4" class="slider" id="sessions-slider">
-                            <small>$800 per 90-minute session</small>
+                            <input type="range" min="1" max="3" value="1" class="slider" id="sessions-slider">
+                            <small>$800 per session</small>
                         </div>
 
                         <div class="price-breakdown" id="afterschool-breakdown">
                             <div class="price-line">
-                                <span>4 sessions @ $800:</span>
-                                <span>$3,200</span>
+                                <span>1 session @ $800:</span>
+                                <span>$800</span>
                             </div>
                             <div class="price-line">
                                 <span>Total:</span>
-                                <span>$3,200</span>
+                                <span>$800</span>
                             </div>
                         </div>
                     </div>
@@ -218,7 +272,7 @@
                         <h3>Assembly + Workshop</h3>
                         <span class="slider-value">$2,500</span>
                     </div>
-                    <p>60-minute assembly + optional 2-hour workshop for entire grade level</p>
+                    <p>Interactive storytelling performance introducing research literacy concepts</p>
                 </div>
 
                 <!-- Total -->
@@ -271,7 +325,7 @@
 
         sessionsSlider.addEventListener('input', () => {
             const sessions = parseInt(sessionsSlider.value);
-            sessionsValue.textContent = `${sessions} sessions`;
+            sessionsValue.textContent = `${sessions} session${sessions > 1 ? 's' : ''}/week`;
             calculateTotal();
         });
 
@@ -288,7 +342,7 @@
 
                 afterschoolBreakdown.innerHTML = `
                     <div class="price-line">
-                        <span>${sessions} sessions @ $800:</span>
+                        <span>${sessions} session${sessions > 1 ? 's' : ''}/week @ $800:</span>
                         <span>$${afterschoolTotal.toLocaleString()}</span>
                     </div>
                     <div class="price-line">
